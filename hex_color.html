@@ -1,0 +1,9 @@
+<button onclick="setColor()">🎨 Random Color</button>
+<p id="color"></p>
+<script>
+function setColor() {
+    const hex = "#" + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+    document.body.style.backgroundColor = hex;
+    document.getElementById("color").innerText = hex;
+}
+</script>
