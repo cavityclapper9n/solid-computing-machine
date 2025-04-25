@@ -1,0 +1,15 @@
+<button onclick="tellJoke()">😂 Tell me a joke</button>
+<p id="joke"></p>
+
+<script>
+const jokes = [
+    "Why don't eggs tell jokes? They'd crack each other up.",
+    "I would avoid the sushi if I was you. It’s a little fishy.",
+    "Why did the scarecrow win an award? He was outstanding in his field!"
+];
+
+function tellJoke() {
+    const random = jokes[Math.floor(Math.random() * jokes.length)];
+    document.getElementById("joke").innerText = random;
+}
+</script>
